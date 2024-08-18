@@ -1,0 +1,13 @@
+train: C:/Drone-Detection_Yolov10/Drone-Detection-data-set(yolov7)-1/train/images
+val: C:/Drone-Detection_Yolov10/Drone-Detection-data-set(yolov7)-1/valid/images
+#test: ../test/images
+
+nc: 1
+names: ['drone']
+
+roboflow:
+  workspace: drone-detection-pexej
+  project: drone-detection-data-set-yolov7
+  version: 1
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/drone-detection-pexej/drone-detection-data-set-yolov7/dataset/1
