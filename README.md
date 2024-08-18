@@ -33,19 +33,15 @@ Execute:
 
 Test_drone-detection_Yolov10.py
  
-that evaluate the 39 first downloaded from 
+that evaluate the 39 first images downloaded from 
 
 https://www.kaggle.com/datasets/sshikamaru/drone-yolo-detection/data
 
 This images are independent of training process.
 
-The images are presented on the screen with a red box , or several red boxes, indicating the predictions, with a green box the label of the image that must indicate te true position, also appears the confidence of predicted drone detection.
+The images are presented on the screen with a red box , or several red boxes, indicating the predictions, and the confidence of predicted drone detection.
 
-
-
-
-
-The model has been obtained with a MAP50 of 0.738 and MAP50-95 of 0.0382 corresponding to epoch 17 of the training (see log in the attached LOG.txt file, in which MAP50 values ​​higher than 0.0.738  are obtained)
+The model has been obtained with a MAP50 of 0.738 and MAP50-95 of 0.382 corresponding to epoch 17 of the training (see log in the attached LOG.txt file, in which MAP50 values ​​higher than 0.738  are obtained)
 
 Comparing the results with those obtained in the reference project https://universe.roboflow.com/drone-detection-pexej/drone-detection-data-set-yolov7/dataset/1 , in this reference project, drones are not detected in images 21.JPEG and 38.JPEG, which are detected in this project, while drones are not detected in images 9.JPEG and 15.JPEG in this project but are detected in the reference project. In the rest of the images the results are similar.
 
