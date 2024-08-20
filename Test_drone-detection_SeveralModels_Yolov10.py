@@ -12,8 +12,15 @@ Created on ago 2024
 
 dirname= "Test1"
 
-dirnameYolo="runs\\train\\exp\\weights\\last32epoch.pt"
+#dirnameYolo="runs\\train\\exp\\weights\\last21epoch.pt"
 #dirnameYolo="last17epoch.pt"
+
+dirnameYolo1="last28epoch.pt"
+dirnameYolo2="last21epoch.pt"
+dirnameYolo3="last16epoch.pt"
+dirnameYolo4="last20epoch.pt"
+dirnameYolo5="last22epoch.pt"
+
 
 
 import cv2
@@ -23,10 +30,14 @@ Ini=time.time()
 #from ultralytics import YOLOv10
 from ultralytics import YOLO
 
-#model = YOLOv10(dirnameYolo)
-model = YOLO(dirnameYolo)
+model1 = YOLO(dirnameYolo1)
+model2 = YOLO(dirnameYolo2)
+model3 = YOLO(dirnameYolo3)
+model4 = YOLO(dirnameYolo4)
+model5 = YOLO(dirnameYolo5)
 
-class_list = model.model.names
+
+class_list = model1.model.names
 print(class_list)
 
 import matplotlib.pyplot as plt
@@ -102,9 +113,113 @@ def Detect_drone_detectionWithYolov10 (img):
    Tabclass_name=[]
    Tabclass_cod=[]
    Tabconfidence=[]
+
+   cont=0
+   while cont < 6:
+        SwHay=0
+        cont=cont+1
+        if cont==1:
+           results = model1(source=img)
+           for j in range(len(results)):
+               # may be several plates in a frame
+               result=results[j]
+       
+               xyxy= result.boxes.xyxy.numpy()
+               confidence= result.boxes.conf.numpy()
+               class_id= result.boxes.cls.numpy().astype(int)
+               #print("Class_id" )
+               #print(class_id)
+               #print("results...."+ str(len(results)))
+               if len(class_id)==0 :
+                #print("FALLA1")
+                continue
+               SwHay=1
+               model=model1
+               break
+          
+        if SwHay==1 : break 
+        if cont==2:
+          
+           
+           results = model2(source=img)
+           
+           for j in range(len(results)):
+               # may be several plates in a frame
+               result=results[j]
+       
+               xyxy= result.boxes.xyxy.numpy()
+               confidence= result.boxes.conf.numpy()
+               class_id= result.boxes.cls.numpy().astype(int)
+               #print("Class_id" )
+               #print(class_id)
+               #print("results...."+ str(len(results)))
+               if len(class_id)==0 :
+                        continue
+               SwHay=1
+               model=model2
+               break
+        if SwHay==1 : break
+        
+        if cont==3:
+           
+           results = model3(source=img)
+           for j in range(len(results)):
+               # may be several plates in a frame
+               result=results[j]
+       
+               xyxy= result.boxes.xyxy.numpy()
+               confidence= result.boxes.conf.numpy()
+               class_id= result.boxes.cls.numpy().astype(int)
+               #print("Class_id" )
+               #print(class_id)
+               #print("results...."+ str(len(results)))
+               if len(class_id)==0 :
+                      continue
+               SwHay=1
+               model=model3
+               break
+        if cont==4:
+           
+           results = model4(source=img)
+           for j in range(len(results)):
+               # may be several plates in a frame
+               result=results[j]
+       
+               xyxy= result.boxes.xyxy.numpy()
+               confidence= result.boxes.conf.numpy()
+               class_id= result.boxes.cls.numpy().astype(int)
+               #print("Class_id" )
+               #print(class_id)
+               #print("results...."+ str(len(results)))
+               if len(class_id)==0 :
+                      continue
+               SwHay=1
+               model=model4
+               break
+        if cont==5:
+           
+           results = model5(source=img)
+           for j in range(len(results)):
+               # may be several plates in a frame
+               result=results[j]
+       
+               xyxy= result.boxes.xyxy.numpy()
+               confidence= result.boxes.conf.numpy()
+               class_id= result.boxes.cls.numpy().astype(int)
+               #print("Class_id" )
+               #print(class_id)
+               #print("results...."+ str(len(results)))
+               if len(class_id)==0 :
+                      continue
+               SwHay=1
+               model=model5
+               break
+          
+        if SwHay==1 : break 
+        continue
    
    # https://blog.roboflow.com/yolov10-how-to-train/
-   results = model(source=img)
+  
    for i in range(len(results)):
        # may be several plates in a frameh
        result=results[i]
