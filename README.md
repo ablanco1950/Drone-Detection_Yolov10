@@ -41,7 +41,7 @@ This images are independent of training process.
 
 The images are presented on the screen with a red box , or several red boxes, indicating the predictions, and the confidence of predicted drone detection.
 
-The model has been obtained with a MAP50 of 0.738 and MAP50-95 of 0.382 corresponding to epoch 17 of the training (see log in the attached LOG.txt file, in which MAP50 values ​​higher than 0.738  are obtained)
+The model has been obtained with a MAP50 of 0.0868 and MAP50-95 of 0.501 corresponding to epoch 33 of the training (see log in the attached LOG.txt file)
 
 Comparing the results with those obtained in the reference project https://universe.roboflow.com/drone-detection-pexej/drone-detection-data-set-yolov7/dataset/1 , the results are similar.
 
@@ -49,10 +49,22 @@ Since the results are not good, they can be optimized by running the program tha
 
 Test_drone-detection_SeveralModels_Yolov10.py
 
+Visually checking:
+
+Images 10, 16, 18, 30 and 32 are not detected
+
+Images 7 and 35 are incorrectly detected
+
+Images 15, 17, 19 and 33 are detected, although with a certain imprecision
+
+The rest of the 39 images are detected with precision
+
+It would be  80-70% precision
+
 
 === Training
 
-The project comes with an optimized model: last17epoch.pt
+The project comes with an optimized model: last33epoch.pt
 
 To obtain this model, the following has been executed:
 
