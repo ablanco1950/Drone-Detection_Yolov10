@@ -45,6 +45,10 @@ The model has been obtained with a MAP50 of 0.738 and MAP50-95 of 0.382 correspo
 
 Comparing the results with those obtained in the reference project https://universe.roboflow.com/drone-detection-pexej/drone-detection-data-set-yolov7/dataset/1 , in this reference project, drones are not detected in images 21.JPEG and 38.JPEG, which are detected in this project, while drones are not detected in images 9.JPEG and 15.JPEG in this project but are detected in the reference project. In the rest of the images the results are similar.
 
+Since the results are not good, they can be optimized by running the program that uses the predictions of several models in cascade:
+
+Test_drone-detection_SeveralModels_Yolov10.py
+
 
 === Training
 
