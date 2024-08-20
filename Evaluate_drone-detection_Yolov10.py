@@ -13,7 +13,8 @@ Created on ago 2024
 dirname= "test\\images"
 dirnameLabels="test\\labels"
 
-dirnameYolo="runs\\train\\exp\\weights\\last17epoch.pt"
+#dirnameYolo="runs\\train\\exp\\weights\\last32epoch.pt"
+dirnameYolo="last32epoch.pt"
 
 import cv2
 import time
@@ -252,9 +253,6 @@ def plot_image(image, boxes, boxesTrue, imageCV, TabFileName):
 Labels, TabFileLabelsName, TabxyxyTrue, ContLabels, ContNoLabels= loadlabels(dirnameLabels)
 
 print("Number of images to test : " + str(len(Labels)))
-
-#print("Number of files without labels : " + str(ContNoLabels))
-#print("Number of files with labels : " + str(ContLabels))
 
 
 imagesComplete, TabFileName=loadimages(dirname)
