@@ -12,8 +12,8 @@ Created on ago 2024
 
 dirname= "Test1"
 
-dirnameYolo="runs\\train\\exp\\weights\\last32epoch.pt"
-#dirnameYolo="last17epoch.pt"
+#dirnameYolo="runs\\train\\exp\\weights\\last33epoch.pt"
+dirnameYolo="last33epoch.pt"
 
 
 import cv2
