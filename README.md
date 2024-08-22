@@ -51,15 +51,15 @@ Test_drone-detection_SeveralModels_Yolov10.py
 
 Visually checking:
 
-Images 10, 16, 18, 30 and 32 are not detected
+Images 10, 16, 18, 30 and 35 are not detected
+ 
+Images 7 and 33 are incorrectly detected
 
-Images 7 and 35 are incorrectly detected
-
-Images 15, 17, 19 and 33 are detected, although with a certain imprecision
+Images 12,15, 17 and 19  are detected, although with a certain imprecision
 
 The rest of the 39 images are detected with precision
 
-It would be  80-70% precision
+It would be  82-70% precision
 
 
 === Training
