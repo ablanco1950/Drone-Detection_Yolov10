@@ -12,14 +12,13 @@ Created on ago 2024
 
 dirname= "Test1"
 
-#dirnameYolo="runs\\train\\exp\\weights\\last21epoch.pt"
-#dirnameYolo="last17epoch.pt"
-
 dirnameYolo1="last28epoch.pt"
 dirnameYolo2="last21epoch.pt"
 dirnameYolo3="last16epoch.pt"
 dirnameYolo4="last20epoch.pt"
-dirnameYolo5="last22epoch.pt"
+#dirnameYolo5="last22epoch.pt"
+#dirnameYolo5="last39epoch.pt"
+dirnameYolo5="last46epoch.pt"
 
 
 

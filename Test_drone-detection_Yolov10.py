@@ -12,7 +12,7 @@ Created on ago 2024
 
 dirname= "Test1"
 
-#dirnameYolo="runs\\train\\exp\\weights\\last33epoch.pt"
+#dirnameYolo="runs\\train\\exp\\weights\\last.pt"
 dirnameYolo="last33epoch.pt"
 
 
@@ -69,6 +69,13 @@ def loadimages(dirname):
                 
                  
                  image = cv2.imread(filepath)
+                 
+                 #convert image rgb to bgr
+                 # https://stackoverflow.com/questions/61500121/opencv-python-reading-image-as-rgb
+                 # doesn´t improve
+                 #image = image[...,::-1]
+
+                 
                  image = cv2.resize(image, (640,640), interpolation = cv2.INTER_AREA)
                  
                  #print(filepath)

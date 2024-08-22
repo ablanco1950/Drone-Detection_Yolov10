@@ -13,8 +13,8 @@ Created on ago 2024
 dirname= "test\\images"
 dirnameLabels="test\\labels"
 
-#dirnameYolo="runs\\train\\exp\\weights\\last32epoch.pt"
-dirnameYolo="last32epoch.pt"
+#dirnameYolo="runs\\train\\exp\\weights\\last.pt"
+dirnameYolo="last33epoch.pt"
 
 import cv2
 import time
