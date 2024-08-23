@@ -41,7 +41,7 @@ This images are independent of training process.
 
 The images are presented on the screen with a red box , or several red boxes, indicating the predictions, and the confidence of predicted drone detection.
 
-The model has been obtained with a MAP50 of 0.868 and MAP50-95 of 0.501 corresponding to epoch 33 of the training (see log in the attached LOG.txt file)
+The model has been obtained with a MAP50 of 0.868 and MAP50-95 of 0.501 corresponding to epoch 33 of the training (see log in the attached LOG.txt file, and results.png)
 
 Comparing the results with those obtained in the reference project https://universe.roboflow.com/drone-detection-pexej/drone-detection-data-set-yolov7/dataset/1 , the results are similar.
 
