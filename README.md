@@ -98,7 +98,9 @@ data.yaml
 
 In data.yaml the absolute addresses of the project appear assuming that it has been installed on disk C:, if it has another location these absolute addresses will have to be changed.
 
+Evaluate the model running
 
+python Evaluate_drone-detection_Yolov10.py
 
 === References
 
