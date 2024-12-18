@@ -102,6 +102,18 @@ Evaluate the model running
 
 python Evaluate_drone-detection_Yolov10.py
 
+changiing line 17
+
+#dirnameYolo="runs\\train\\exp\\weights\\last.pt"
+dirnameYolo="last33epoch.pt"
+
+with the model that appears in the directory runs\\train\\expnn\\weights\\last.pt after the training
+where expnn is the las directory en runs\\train
+
+in green appears the labeled object, in red the predicted and, so as not to confuse the image, a text above with the  conf of prediction or predictios
+
+Comparing the results with those obtained in the reference project https://universe.roboflow.com/drone-detection-pexej/drone-detection-data-set-yolov7/dataset/1 , the results are similar.
+
 === References
 
 https://universe.roboflow.com/drone-detection-pexej/drone-detection-data-set-yolov7/dataset/1
