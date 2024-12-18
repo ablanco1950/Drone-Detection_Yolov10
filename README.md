@@ -37,7 +37,7 @@ that evaluate the 39 first images downloaded from
 
 https://www.kaggle.com/datasets/sshikamaru/drone-yolo-detection/data
 
-This images are independent of training process.
+This images are independent of training process and has different sizes.
 
 The images are presented on the screen with a red box , or several red boxes, indicating the predictions, and the confidence of predicted drone detection.
 
