@@ -27,6 +27,10 @@ Unzip the Test1.zip folder
 
 Some zip decompressors duplicate the name of the folder to be decompressed; a folder that contains another folder with the same name, should only contain one. In these cases it will be enough to cut the innermost folder and copy it to the project folder.
 
+Install dill
+
+python pip-script.py install dill
+
 === Test:
 
 Execute:
